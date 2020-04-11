@@ -1,0 +1,24 @@
+server:
+  port: 12223
+area:
+  name: 邯郸
+#涉及功能：生成账单信息存到服务器上，上传账单到部平台
+essc:
+  country:
+    #部平台测试地址
+    url: https://handanshebao.com/ggfw/ecard/api/test/essc/  #部平台金保专网地址 涉及功能部平台二维码解析和移动支付请求密码验证
+    #url: http://10.1.189.24/ecardapi/  #部平台金保专网地址
+    #公司mock地址
+    #url: https://rddoor.neuqsoft.com:3000/mock/43/
+    #秦皇岛
+    channelNo: 1303000001
+
+#解析电子社保卡，解析签发号渠道号接口
+medical.center.url: http://172.30.3.217:6467/center/
+info:
+  app:
+    zone: neuqsoft
+app:
+  graylog:
+    state: true
+    url: http://172.30.3.211:12201/gelf
